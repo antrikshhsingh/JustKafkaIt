@@ -1,4 +1,3 @@
-
 <?xml version="1.0" encoding="UTF-8"?>
 <databaseChangeLog
         xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
@@ -56,14 +55,14 @@
 
         <sql>
             ALTER TABLE kafka_clusters
-            ADD CONSTRAINT chk_kafka_clusters_name
-            CHECK (LENGTH(TRIM(name)) &gt; 0);
+                ADD CONSTRAINT chk_kafka_clusters_name
+                    CHECK (LENGTH(TRIM(name)) &gt; 0);
         </sql>
 
         <sql>
             ALTER TABLE kafka_clusters
-            ADD CONSTRAINT chk_kafka_clusters_bootstrap_servers
-            CHECK (LENGTH(TRIM(bootstrap_servers)) &gt; 0);
+                ADD CONSTRAINT chk_kafka_clusters_bootstrap_servers
+                    CHECK (LENGTH(TRIM(bootstrap_servers)) &gt; 0);
         </sql>
 
     </changeSet>

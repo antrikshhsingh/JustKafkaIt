@@ -1,6 +1,5 @@
-package com.justkafkait.backend.cluster.repository;
+package com.justkafkait.backend.cluster.entity;
 
-import com.justkafkait.backend.cluster.entity.SecurityProtocol;
 import jakarta.persistence.*;
 import lombok.*;
 
